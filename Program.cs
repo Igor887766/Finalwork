@@ -1,4 +1,4 @@
-void MyPrintArray(string[] localArray)  
+﻿void MyPrintArray(string[] localArray)  
 {
     Console.Write("[");
     for (int i =0; i < localArray.Length; i++)
