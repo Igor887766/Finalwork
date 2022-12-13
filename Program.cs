@@ -3,21 +3,21 @@
     Console.Write("[");
     for (int i =0; i < localArray.Length; i++)
     {
-        Console.Write($"\"{localArray[i]}\""); // Печатаем текущую строку массива в кавычках
-        if (i != localArray.Length - 1) Console.Write(", ");  // после последнего элемента не печатаем ", "
+        Console.Write($"\"{localArray[i]}\""); 
+        if (i != localArray.Length - 1) Console.Write(", ");  
     }
     Console.WriteLine("]");
 }
 
 Console.Clear();
-Console.WriteLine("Итоговая проверочная работа.");
+Console.WriteLine("Добрый вечер! Будем переварачивать массив символов длина которых меньше, либо равна 3 символам");
 Console.Write("Введите количество строк исходного массива n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-string [] iArray = new string [n];  // Исходный массив
+string [] iArray = new string [n];  
 
 int m = 0;  
-
+Console.WriteLine();
 for (int i=0; i<iArray.Length; i++)  
 {
     Console.Write($"Введите {i+1}-ю строку: ");
@@ -27,7 +27,7 @@ for (int i=0; i<iArray.Length; i++)
         m++;
     }
 }
-
+Console.WriteLine();
 Console.WriteLine("Исходный массив: ");
 MyPrintArray(iArray);
 
@@ -43,6 +43,6 @@ for(int i=0; i<iArray.Length; i++)
         k++;
     }
 }
-
-Console.WriteLine("Результирующий массив: ");
+Console.WriteLine();
+Console.WriteLine("Перевернутый массив: ");
 MyPrintArray(rArray);
